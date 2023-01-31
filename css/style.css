@@ -9,54 +9,57 @@
 }
 
 /*----------Header---------*/
-.body {
+body {
     font-family: 'Kanit', sans-serif;
 }
 
-.header {
+.listaHeader {
     font-family: 'Kanit', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.86) , rgb(87, 108, 183));
+    background: linear-gradient(rgba(0, 0, 0, 0.86), rgb(87, 108, 183));
     position: sticky;
-    top: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    top: 0;
+
 }
 
-.header img {
+.listaHeader img {
     width: 300px;
     height: 70px;
 }
 
 
-.header nav {
+.listaHeader nav {
     display: inline;
 }
 
-.header nav ul {
+.listaHeader nav ul {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 
-.header nav ul li {
+.listaHeader nav ul li {
     list-style: none;
     margin: 10px 15px 15px 10px;
     transition: 1s;
 
 }
-.header nav ul li:hover{
+
+.listaHeader nav ul li:hover {
     transform: scale(1.1);
 }
 
-.header nav ul li a {
+.listaHeader nav ul li a {
     color: rgb(237, 237, 237);
     text-decoration: none;
     font-size: 20px;
     transition: 0.5s;
 
 }
-.header nav ul li a:hover{
+
+.listaHeader nav ul li a:hover {
     color: rgba(0, 0, 0, 0.456);
 }
 
@@ -66,7 +69,7 @@
     text-align: center;
     width: 100%;
     height: calc(100vh - 70px);
-    background: linear-gradient(rgba(0, 0, 0, 0.493) , rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,6 +85,7 @@
     font-weight: bolder;
     color: rgb(237, 237, 237);
 }
+
 .hero p {
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -90,11 +94,13 @@
     margin-bottom: 5px;
 
 }
-.hero .contenedorNuestraubicacion{
+
+.hero .contenedorNuestraubicacion {
     transition: 1s;
 }
-.hero .contenedorNuestraubicacion:hover{
-transform: scale(1.1);
+
+.hero .contenedorNuestraubicacion:hover {
+    transform: scale(1.1);
 }
 
 
@@ -223,16 +229,17 @@ transform: scale(1.1);
 
 .directivosCargoocupar div {
     position: relative;
-box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.7);
--webkit-box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.7);
--moz-box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.7);
-transition: 1s;
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
+    transition: 1s;
 }
-.directivosCargoocupar div:hover{
+
+.directivosCargoocupar div:hover {
     transform: scale(1.1);
-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
 }
 
 .directivos .directivosCargoocupar img {
@@ -264,7 +271,8 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
     bottom: 10px;
     transition: 1s;
 }
-.fixed:hover{
+
+.fixed:hover {
     transform: scale(1.1);
 }
 
@@ -277,7 +285,7 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
 /*----------Footer-start---------*/
 .footer {
     font-family: 'Kanit', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.788) , rgb(87, 108, 183));
+    background: linear-gradient(rgba(0, 0, 0, 0.788), rgb(87, 108, 183));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -292,7 +300,8 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
     align-items: center;
     transition: 1s;
 }
-.footer div ul li:hover{
+
+.footer div ul li:hover {
     transform: scale(1.1);
 }
 
@@ -305,7 +314,8 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
     transition: 0.5s;
 
 }
-.footer div ul li a:hover{
+
+.footer div ul li a:hover {
     color: rgba(0, 0, 0, 0.456);
 }
 
@@ -324,7 +334,8 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
     margin-right: 30px;
     transition: 1s;
 }
-.footerGaleriaRedes img:hover{
+
+.footerGaleriaRedes img:hover {
     transform: scale(1.1);
 }
 
@@ -335,7 +346,7 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
     font-family: 'Kanit', sans-serif;
     height: 90vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.493) , rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -400,7 +411,7 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
     font-family: 'Kanit', sans-serif;
     height: 90vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.493) , rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -679,19 +690,19 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width:700px) {
-    .header {
+    .listaHeader {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .header img {
+    .listaHeader img {
         display: block;
         margin: auto;
 
     }
 
-    .header a {
+    .listaHeader a {
         display: block;
         text-align: center
     }
@@ -799,26 +810,26 @@ box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width:500px) {
-    .header {
+    .listaHeader {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .header img {
+    .listaHeader img {
         display: block;
         margin: auto;
         width: 200px;
         height: 45px;
     }
 
-    .header nav ul li a {
+    .listaHeader nav ul li a {
         display: block;
         text-align: center;
         font-size: 15px;
     }
 
-    .header nav ul li {
+    .listaHeader nav ul li {
         margin: 3px
     }
 

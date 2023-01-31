@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------CSS-BOOTSTRAP------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Cuenta</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="listaHeader">
         <img src="../img/name-marca.png" alt="">
         <nav>
             <ul>
@@ -27,48 +31,44 @@
     <main class="body">
         <section class="register">
             <h2>Registro</h2>
-            <form action="">
-                <div>
-                    <label for="user">Nombre: </label>
-                    <input type="text" name="nombre" id="user">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                        value="email@example.com">
                 </div>
-                <div>
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" name="apellido" id="apellido">
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
                 </div>
-                <div>
-                    <label for="correo">Correo Electronico: </label>
-                    <input type="text" name="correo" id="correo">
-                </div>
-                <div>
-                    <label for="contrasena">Contraseña: </label>
-                    <input type="password" name="" id="contrasena">
-                </div>
-                <h2>Genero</h2>
-                <div>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero" id="masculino">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero" id="femenino">
-                    <label for="femenino">Otro</label>
-                    <input type="radio" name="genero" id="otro">
-                </div>
-                <div>
-                    <h2>Nacionalidad</h2>
-                    <select name="" id="">
-                        <option value="">America Norte</option>
-                        <option value="">America Sur</option>
-                        <option value="">America Central</option>
-                    </select>
-                </div>
-                <div>
-                    <h2>Comentarios</h2>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" name="" id="" value="Enviar Comentario">
-                    <input type="reset" name="" id="" value="Borrar Comentario">
-                </div>
+            </div>
+            <h2>Genero</h2>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero" id="femenino">
+                <label for="femenino">Otro</label>
+                <input type="radio" name="genero" id="otro">
+            </div>
+            <div>
+                <h2>Nacionalidad</h2>
+                <select name="" id="">
+                    <option value="">America Norte</option>
+                    <option value="">America Sur</option>
+                    <option value="">America Central</option>
+                </select>
+            </div>
+            <div>
+                <h2>Comentarios</h2>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="" id="" value="Enviar Comentario">
+                <input type="reset" name="" id="" value="Borrar Comentario">
+            </div>
             </form>
         </section>
     </main>
@@ -90,5 +90,9 @@
             <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
