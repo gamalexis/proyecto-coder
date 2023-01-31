@@ -15,12 +15,12 @@
 
 <body>
     <header class="listaHeader">
-        <img src="../img/name-marca.png" alt="">
+        <a href="../index.html"><img src="../img/name-marca.png" alt="Nombre de la Marca"></a>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./cuenta.html">Cuenta</a></li>
-                <li><a href="./foro.html">Foro</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./tienda.html">Tienda</a></li>
                 <li><a href="./noticias.html">Noticias</a></li>
                 <li><a href="./galeria.html">Galeria</a></li>
@@ -31,45 +31,47 @@
     <main class="body">
         <section class="register">
             <h2>Registro</h2>
-            <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" id="staticEmail"
-                        value="email@example.com">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
                 </div>
-            </div>
-            <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
             <h2>Genero</h2>
-            <div>
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero" id="masculino">
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="genero" id="femenino">
-                <label for="femenino">Otro</label>
-                <input type="radio" name="genero" id="otro">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Hombre
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Mujer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios3">
+                    Otro
+                </label>
             </div>
             <div>
                 <h2>Nacionalidad</h2>
-                <select name="" id="">
+                <select class="registerNacionalidad" name="" id="">
                     <option value="">America Norte</option>
                     <option value="">America Sur</option>
                     <option value="">America Central</option>
                 </select>
             </div>
-            <div>
-                <h2>Comentarios</h2>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit" name="" id="" value="Enviar Comentario">
-                <input type="reset" name="" id="" value="Borrar Comentario">
-            </div>
-            </form>
         </section>
     </main>
     <footer class="footer">
@@ -77,13 +79,13 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./cuenta.html">Cuenta</a></li>
-                <li><a href="./foro.html">Foro</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./tienda.html">Tienda</a></li>
                 <li><a href="./noticias.html">Noticias</a></li>
                 <li><a href="./galeria.html">Galeria</a></li>
             </ul>
         </div>
-        <a href="../index.html"><img src="../img/name-marca.png" alt=""></a>
+        <a href="../index.html"><img src="../img/name-marca.png" alt="Nombre de la Marca"></a>
         <div class="footerGaleriaRedes">
             <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
             <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>

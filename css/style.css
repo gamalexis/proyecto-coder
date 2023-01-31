@@ -8,13 +8,13 @@
     box-sizing: border-box;
 }
 
-/*----------Header---------*/
+/*-------------------------------------Header-Start--------------------------------------------*/
 body {
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--bs-font-sans-serif);
 }
 
 .listaHeader {
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--bs-font-sans-serif);
     background: linear-gradient(rgba(0, 0, 0, 0.86), rgb(87, 108, 183));
     position: sticky;
     display: flex;
@@ -63,8 +63,8 @@ body {
     color: rgba(0, 0, 0, 0.456);
 }
 
-
-/*----------Main-start---------*/
+/*-------------------------------------Header-End--------------------------------------------*/
+/*--------------------------------------Main-start-----------------------------------------*/
 .hero {
     text-align: center;
     width: 100%;
@@ -127,7 +127,7 @@ body {
     color: rgb(138, 12, 12);
     font-size: 30px;
     padding: 20px;
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--bs-font-sans-serif);
 }
 
 .noticiasContenedor {
@@ -143,7 +143,7 @@ body {
     background-color: white;
     border: 2px solid black;
     width: 300px;
-    height: 360px;
+    height: 380px;
 }
 
 .noticiasContenedor div a {
@@ -176,7 +176,7 @@ body {
     background-color: white;
     border: 2px solid black;
     width: 300px;
-    height: 360px;
+    height: 380px;
 }
 
 .noticiasContenedor2 div a {
@@ -260,11 +260,9 @@ body {
     width: 100%;
 }
 
-/*----------Main-end---------*/
+/*-------------------------------Main-end---------------------------------*/
 
-
-
-/*------Fixed-start-----*/
+/*---------------------------------Fixed-start---------------------------*/
 .fixed {
     position: fixed;
     right: 90px;
@@ -281,10 +279,10 @@ body {
     height: 40px;
 }
 
-/*------Fixed-end-----*/
-/*----------Footer-start---------*/
+/*-----------------------Fixed-end--------------------------------*/
+/*-----------------------------------Footer-start-------------------------------------*/
 .footer {
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--bs-font-sans-serif);
     background: linear-gradient(rgba(0, 0, 0, 0.788), rgb(87, 108, 183));
     display: flex;
     flex-direction: row;
@@ -339,14 +337,22 @@ body {
     transform: scale(1.1);
 }
 
-/*----------Footer-end---------*/
-/*!-------------------------------------------------CSS-FORO-INDEX-START--------------------------------*/
+/*-----------------------------------Footer-end--------------------------------*/
+/*!-------------------------------------------------CSS-NOSOTROS-INDEX-START--------------------------------*/
 /*--------------------------------------------------MAIN---------------------------------------------*/
-.foro {
-    font-family: 'Kanit', sans-serif;
-    height: 90vh;
+.carouselNosotros {}
+
+.carousel-item img {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
+    height: 90vh;
+    object-fit: cover;
+}
+
+.nosotros {
+    font-family: var(--bs-font-sans-serif);
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,13 +363,24 @@ body {
     align-items: center;
 }
 
-.foro form div h2 {
-    color: rgba(67, 161, 255, 0.836);
+.nosotros form div h2 {
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 
+.nosotros form div textarea {
+    border-radius: 0.5rem;
+}
 
-/*!-------------------------------------------------CSS-FORO-INDEX-END--------------------------------*/
+.nosotros form div input {
+    border: solid 1px rgba(0, 0, 0, 0.495);
+    border-radius: 0.5rem;
+    padding: 3px;
+}
+
+
+
+/*!-------------------------------------------------CSS-NOSOTROS-INDEX-END--------------------------------*/
 /*!-------------------------------------------------CSS-GALERIA-INDEX-START--------------------------------*/
 .gridGaleria {
     display: grid;
@@ -408,7 +425,7 @@ body {
 /*!----------------------------------------------CSS-PAGES-CUENTAS-START--------------------------------*/
 /*--------------------------------------------------MAIN---------------------------------------------*/
 .register {
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--bs-font-sans-serif);
     height: 90vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
@@ -417,12 +434,18 @@ body {
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .register h2 {
-    color: rgba(67, 161, 255, 0.836);
-    padding: 5px;
+    color: rgba(255, 255, 255, 0.836);
+    padding: 3px;
     font-size: 30px;
+    border: solid 1px white;
+    margin-top: 15px;
 }
 
 
@@ -432,11 +455,47 @@ body {
     font-size: 20px;
 }
 
+.form-control {
+    background-color: rgba(255, 255, 255, 0.373);
+    width: 250px;
+    display: inline-block;
+    transition: 1s;
+}
+
+.form-control:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #000000;
+    transition: 0, 75s;
+}
+
+.btn-primary:hover {
+    background-color: rgba(67, 161, 255, 0.526);
+}
+
+.form-check-input {
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.373);
+}
+
+.form-check-input:checked {
+    background-color: rgba(67, 161, 255, 0.526);
+}
+
+.registerNacionalidad {
+    border-radius: 0.25rem;
+}
+
+
 /*!-------------------------------------------------CSS-PAGES-CUENTAS-END------------------------------*/
 /*!----------------------------------------------CSS-PAGES-TIENDA-START--------------------------------*/
 .h2Tienda {
     background-color: rgb(237, 237, 237);
-    font-family: 'Archivo', sans-serif;
+    font-family: var(--bs-font-sans-serif);
 }
 
 .h2Tienda h2 {
@@ -444,16 +503,21 @@ body {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .h2Tienda p {
     font-size: 20px;
     text-align: center;
+    margin: 0;
 }
 
 .productos {
     background-color: rgb(237, 237, 237);
-    font-family: 'Archivo', sans-serif;
+    font-family: var(--bs-font-sans-serif);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -481,6 +545,7 @@ body {
 .productosContendeor p {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .productosContendeor a {
@@ -498,7 +563,7 @@ body {
 
 .productos2 {
     background-color: rgb(237, 237, 237);
-    font-family: 'Archivo', sans-serif;
+    font-family: var(--bs-font-sans-serif);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -526,6 +591,7 @@ body {
 .productosContendeor2 p {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .productosContendeor2 a {
