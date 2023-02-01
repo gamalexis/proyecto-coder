@@ -616,7 +616,7 @@ body {
 @media screen and (max-width:1000px) {
     .noticiasContenedor div {
         width: 250px;
-        height: 315px;
+        height: 345px;
     }
 
     .noticiasContenedor div a {
@@ -638,7 +638,7 @@ body {
 
     .noticiasContenedor2 div {
         width: 250px;
-        height: 315px;
+        height: 345px;
     }
 
     .noticiasContenedor2 div a {
@@ -712,7 +712,7 @@ body {
 @media screen and (max-width:800px) {
     .noticiasContenedor div {
         width: 200px;
-        height: 325px;
+        height: 355px;
     }
 
     .noticiasContenedor div a {
@@ -734,7 +734,7 @@ body {
 
     .noticiasContenedor2 div {
         width: 200px;
-        height: 325px;
+        height: 355px;
     }
 
     .noticiasContenedor2 div a {
