@@ -105,7 +105,6 @@
         flex-direction: row;
         justify-content: space-evenly;
         text-align: center;
-        margin-bottom: 50px;
 
         div {
             background-color: white;
@@ -165,7 +164,7 @@
         text-align: center;
         padding: 30px;
 
-        .directivosCargoocupar div {
+        div {
             position: relative;
             box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
             -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
@@ -334,6 +333,13 @@
                 background-color: rgba(67, 161, 255, 0.526);
             }
         }
+
+        .form-check-label {
+            color: rgb(255, 252, 252);
+            background-color: rgba(0, 0, 0, 0.251);
+            font-size: 20px;
+
+        }
     }
 
     div {
@@ -353,6 +359,7 @@
     grid-auto-rows: 150px;
     grid-gap: 10px;
     padding: 5px;
+
     .gridItem {
         img {
             width: 100%;
@@ -368,24 +375,26 @@
             font-size: 0px;
         }
     }
+
     .gridItem .Img1 {
         grid-column: span 2;
     }
-    
+
     .gridItem .Img4 {
         grid-column: span 2;
         grid-row: span 2;
     }
-    
+
     .gridItem .Img5 {
         grid-row: span 2;
     }
-    
+
     .gridItem .Img9 {
         grid-column: span 2;
     }
 
 }
+
 /*-------------------------------------------------CSS-GALERIA-MAIN-END--------------------------------*/
 
 
@@ -393,11 +402,12 @@
 
 
 /*----------------------------------------------CSS-MAIN-TIENDA-START--------------------------------*/
-.tienda{
-    .h2Tienda{
+.tienda {
+    .h2Tienda {
         background-color: rgb(237, 237, 237);
         font-family: var(--bs-font-sans-serif);
-        h2{  
+
+        h2 {
             font-size: 40px;
             text-align: center;
             padding-top: 50px;
@@ -407,13 +417,15 @@
             align-items: center;
             justify-content: center;
         }
-        p{
+
+        p {
             font-size: 20px;
             text-align: center;
             margin: 0;
         }
     }
-    .productos{
+
+    .productos {
         background-color: rgb(237, 237, 237);
         font-family: var(--bs-font-sans-serif);
         display: flex;
@@ -421,27 +433,32 @@
         justify-content: space-evenly;
         padding-top: 50px;
         padding-bottom: 15px;
-        .productosContendeor{
+
+        .productosContendeor {
             transition: 2s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
                 box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
                 -webkit-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
                 -moz-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
             }
-            .enlaceImg{
-                img{
+
+            .enlaceImg {
+                img {
                     width: 244px;
                     height: 163px;
                     border: 1px solid rgba(0, 0, 0, 0.515);
                 }
             }
-            p{
+
+            p {
                 display: flex;
                 justify-content: center;
                 margin: 0;
             }
-            a{
+
+            a {
                 display: flex;
                 justify-content: center;
                 text-decoration: none;
@@ -449,11 +466,13 @@
             }
         }
     }
-    .contenedorTexto{
+
+    .contenedorTexto {
         border: 1px solid rgba(0, 0, 0, 0.515);
         background-color: rgba(218, 218, 218, 0.429);
     }
-    .productos2{
+
+    .productos2 {
         background-color: rgb(237, 237, 237);
         font-family: var(--bs-font-sans-serif);
         display: flex;
@@ -461,27 +480,32 @@
         justify-content: space-evenly;
         padding-top: 50px;
         padding-bottom: 15px;
-        .productosContendeor2{
+
+        .productosContendeor2 {
             transition: 2s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
                 box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
                 -webkit-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
                 -moz-box-shadow: 10px 10px 17px -4px rgba(0, 0, 0, 0.75);
             }
-            .enlaceImg2{
-                img{
+
+            .enlaceImg2 {
+                img {
                     width: 244px;
                     height: 163px;
                     border: 1px solid rgba(0, 0, 0, 0.515);
                 }
             }
-            p{
+
+            p {
                 display: flex;
                 justify-content: center;
                 margin: 0;
             }
-            a{
+
+            a {
                 display: flex;
                 justify-content: center;
                 text-decoration: none;
@@ -489,7 +513,8 @@
             }
         }
     }
-    .contenedorTexto2{
+
+    .contenedorTexto2 {
         border: 1px solid rgba(0, 0, 0, 0.515);
         background-color: rgba(218, 218, 218, 0.429);
     }
