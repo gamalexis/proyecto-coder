@@ -24,7 +24,7 @@ body {
 
 }
 
-.listaHeader img {
+.listaHeader a img {
     width: 300px;
     height: 70px;
 }
@@ -145,15 +145,16 @@ body {
     width: 300px;
     height: 380px;
 }
+.noticiasContenedor div img {
+    width: 296px;
+    height: 250px;
+}
 
 .noticiasContenedor div a {
     text-decoration: none;
 }
 
-.noticiasContenedor div img {
-    width: 296px;
-    height: 250px;
-}
+
 
 .noticiasContenedor div h3 {
     color: rgb(138, 12, 12);
@@ -242,12 +243,11 @@ body {
     -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
 }
 
-.directivos .directivosCargoocupar img {
+.directivosCargoocupar img {
     width: 250px;
     height: 200px;
     display: flex;
     align-items: center;
-
 
 }
 
@@ -338,10 +338,8 @@ body {
 }
 
 /*-----------------------------------Footer-end--------------------------------*/
-/*!-------------------------------------------------CSS-NOSOTROS-INDEX-START--------------------------------*/
+/*!-------------------------------------------------CSS-NOSOTROS-MAIN-START--------------------------------*/
 /*--------------------------------------------------MAIN---------------------------------------------*/
-.carouselNosotros {}
-
 .carousel-item img {
     width: 100%;
     height: 90vh;
@@ -380,7 +378,7 @@ body {
 
 
 
-/*!-------------------------------------------------CSS-NOSOTROS-INDEX-END--------------------------------*/
+/*!-------------------------------------------------CSS-NOSOTROS-MAIN-END--------------------------------*/
 /*!-------------------------------------------------CSS-GALERIA-INDEX-START--------------------------------*/
 .gridGaleria {
     display: grid;
@@ -391,7 +389,7 @@ body {
 
 }
 
-.gridGaleria div img {
+.gridGaleria .gridItem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -400,7 +398,7 @@ body {
     -moz-box-shadow: 15px 0px 81px -6px rgba(0, 0, 0, 0.75);
 }
 
-.gridGaleria div h2 {
+.gridGaleria .gridItem h2 {
     font-size: 0px;
 }
 
@@ -423,7 +421,8 @@ body {
 
 /*!-------------------------------------------------CSS-GALERIA-INDEX-END--------------------------------*/
 /*!----------------------------------------------CSS-PAGES-CUENTAS-START--------------------------------*/
-/*--------------------------------------------------MAIN---------------------------------------------*/
+/*-------------------------------------------------CSS-CUENTA-MAIN-START--------------------------*/
+
 .register {
     font-family: var(--bs-font-sans-serif);
     height: 90vh;
