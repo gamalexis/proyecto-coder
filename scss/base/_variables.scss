@@ -1,3 +1,49 @@
 $list-header-bg: linear-gradient(rgba(0, 0, 0, 0.86), rgb(87, 108, 183));
 $list-header-font: var(--bs-font-sans-serif);
 
+
+
+/*.productosflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.profuctos{
+    @extend %productosFlex;
+}*/
+
+
+//*mapas
+
+$cajanoticiasContenedor:(
+flex-caja:flex,
+direction-caja:row,
+justify-caja:space-evenly,
+align-caja: center,
+marginbot-caja: 50px,
+);
+
+$cajanoticiasContenedorDiv:(
+    backround-div:white,
+    border-div: 2px solid black,
+    ancho-div:300px,
+    alto-div:380px,
+);
+$cajanoticiasContenedorDivImg:(
+    ancho-div-img:296px,
+    alto-div-img:250px,
+);
+$cajanoticiasContenedorDivH3:(
+color-div-h3: rgb(138, 12, 12),
+fontz-div-h3:20px,
+);
+
+$cajanoticiasContenedorDivAP:(
+    color-div-a-p: rgb(0, 0, 0),
+    fontz-div-a-p:15px,
+);
+
+
+
+
+

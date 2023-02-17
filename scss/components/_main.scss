@@ -65,71 +65,70 @@
     }
 
     .noticiasContenedor {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
-        margin-bottom: 50px;
+        display:map-get($cajanoticiasContenedor , flex-caja );
+        flex-direction:map-get($cajanoticiasContenedor , direction-caja );
+        justify-content: map-get($cajanoticiasContenedor , justify-caja );
+        text-align:map-get($cajanoticiasContenedor , align-caja);
+        margin-bottom: map-get($cajanoticiasContenedor , marginbot-caja);
 
         div {
-            background-color: white;
-            border: 2px solid black;
-            width: 300px;
-            height: 380px;
-
+            background-color:map-get($cajanoticiasContenedorDiv , backround-div );
+            border: map-get($cajanoticiasContenedorDiv , border-div );
+            width: map-get($cajanoticiasContenedorDiv , ancho-div );
+            height: map-get($cajanoticiasContenedorDiv , alto-div );
             img {
-                width: 296px;
-                height: 250px;
+                width: map-get($cajanoticiasContenedorDivImg, ancho-div-img );
+                height: map-get($cajanoticiasContenedorDivImg , alto-div-img );
             }
 
             a {
                 text-decoration: none;
 
                 h3 {
-                    color: rgb(138, 12, 12);
-                    font-size: 20px;
+                    color:map-get($cajanoticiasContenedorDivH3 , color-div-h3);
+                    font-size: map-get($cajanoticiasContenedorDivH3 , fontz-div-h3 );
                 }
             }
 
             a {
                 p {
-                    color: rgb(0, 0, 0);
-                    font-size: 15px;
+                    color: map-get($cajanoticiasContenedorDivAP ,  color-div-a-p);
+                    font-size: map-get($cajanoticiasContenedorDivAP, fontz-div-a-p );
                 }
             }
         }
     }
 
     .noticiasContenedor2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
+        display:map-get($cajanoticiasContenedor , flex-caja );
+        flex-direction:map-get($cajanoticiasContenedor , direction-caja );
+        justify-content: map-get($cajanoticiasContenedor , justify-caja );
+        text-align:map-get($cajanoticiasContenedor , align-caja);
 
         div {
-            background-color: white;
-            border: 2px solid black;
-            width: 300px;
-            height: 380px;
+            background-color:map-get($cajanoticiasContenedorDiv , backround-div );
+            border: map-get($cajanoticiasContenedorDiv , border-div );
+            width: map-get($cajanoticiasContenedorDiv , ancho-div );
+            height: map-get($cajanoticiasContenedorDiv , alto-div );
 
             img {
-                width: 296px;
-                height: 250px;
+                width: map-get($cajanoticiasContenedorDivImg, ancho-div-img );
+                height: map-get($cajanoticiasContenedorDivImg , alto-div-img );
             }
 
             a {
                 text-decoration: none;
 
                 h3 {
-                    color: rgb(138, 12, 12);
-                    font-size: 20px;
+                    color:map-get($cajanoticiasContenedorDivH3 , color-div-h3);
+                    font-size: map-get($cajanoticiasContenedorDivH3 , fontz-div-h3 );
                 }
             }
 
             a {
                 p {
-                    color: rgb(0, 0, 0);
-                    font-size: 15px;
+                    color: map-get($cajanoticiasContenedorDivAP ,  color-div-a-p);
+                    font-size: map-get($cajanoticiasContenedorDivAP, fontz-div-a-p );
                 }
             }
         }
@@ -428,9 +427,6 @@
     .productos {
         background-color: rgb(237, 237, 237);
         font-family: var(--bs-font-sans-serif);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
         padding-top: 50px;
         padding-bottom: 15px;
 
