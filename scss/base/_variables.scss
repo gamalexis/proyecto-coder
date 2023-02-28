@@ -2,7 +2,7 @@ $list-header-bg: linear-gradient(rgba(0, 0, 0, 0.86), rgb(87, 108, 183));
 $list-header-font: var(--bs-font-sans-serif);
 
 //*mapas
-$cajanoticiasContenedor: (
+/*$cajanoticiasContenedor: (
     flex-caja:flex,
     direction-caja:row,
     justify-caja:space-evenly,
@@ -28,7 +28,7 @@ $cajanoticiasContenedorDivH3: (
 $cajanoticiasContenedorDivAP: (
     color-div-a-p: rgb(0, 0, 0),
     fontz-div-a-p:15px,
-);
+);*/
 //*MIXIN
 @mixin listaHeader ($flexdirect, $justify, $algin) {
     flex-direction: $flexdirect ;

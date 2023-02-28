@@ -1,14 +1,39 @@
 @import url("https://fonts.googleapis.com/css2? familia= Kanit:peso@200;500 & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 /*-------------------------------------Header-Start--------------------------------------------*/
-body {
-  font-family: var(--bs-font-sans-serif); }
+/*$cajanoticiasContenedor: (
+    flex-caja:flex,
+    direction-caja:row,
+    justify-caja:space-evenly,
+    align-caja: center,
+    marginbot-caja: 50px,
+);
 
+$cajanoticiasContenedorDiv: (
+    backround-div:white,
+    border-div: 2px solid black,
+    ancho-div:300px,
+    alto-div:380px,
+);
+$cajanoticiasContenedorDivImg: (
+    ancho-div-img:296px,
+    alto-div-img:250px,
+);
+$cajanoticiasContenedorDivH3: (
+    color-div-h3: rgb(138, 12, 12),
+    fontz-div-h3:20px,
+);
+
+$cajanoticiasContenedorDivAP: (
+    color-div-a-p: rgb(0, 0, 0),
+    fontz-div-a-p:15px,
+);*/
 .directivos .directivosCargoocupar {
   display: flex;
   flex-direction: row;
@@ -38,7 +63,8 @@ body {
   top: 0; }
   .listaHeader a img {
     width: 300px;
-    height: 70px; }
+    height: 100px;
+    object-fit: cover; }
   .listaHeader nav {
     display: inline; }
     .listaHeader nav ul {
@@ -100,67 +126,47 @@ body {
         height: 20px; }
 
 .noticias {
-  background-color: #ededed;
-  text-align: center; }
-  .noticias h2 {
-    color: #8a0c0c;
-    font-size: 30px;
-    padding: 20px;
-    font-family: var(--bs-font-sans-serif); }
-  .noticias .noticiasContenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-bottom: 50px; }
-    .noticias .noticiasContenedor div {
-      background-color: white;
-      border: 2px solid black;
-      width: 300px;
-      height: 380px; }
-      .noticias .noticiasContenedor div img {
-        width: 296px;
-        height: 250px; }
-      .noticias .noticiasContenedor div a {
-        text-decoration: none; }
-        .noticias .noticiasContenedor div a h3 {
-          color: #8a0c0c;
-          font-size: 20px; }
-      .noticias .noticiasContenedor div a p {
-        color: black;
-        font-size: 15px; }
-  .noticias .noticiasContenedor2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center; }
-    .noticias .noticiasContenedor2 div {
-      background-color: white;
-      border: 2px solid black;
-      width: 300px;
-      height: 380px; }
-      .noticias .noticiasContenedor2 div img {
-        width: 296px;
-        height: 250px; }
-      .noticias .noticiasContenedor2 div a {
-        text-decoration: none; }
-        .noticias .noticiasContenedor2 div a h3 {
-          color: #8a0c0c;
-          font-size: 20px; }
-      .noticias .noticiasContenedor2 div a p {
-        color: black;
-        font-size: 15px; }
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; }
+
+.noticias .noticiasContenedor .noticias1 {
+  display: flex;
+  margin: 20px; }
+  .noticias .noticiasContenedor .noticias1 img {
+    width: 600px;
+    height: 300px; }
+  .noticias .noticiasContenedor .noticias1 a {
+    text-decoration: none; }
+    .noticias .noticiasContenedor .noticias1 a h2 {
+      font-size: 32px;
+      font-weight: bolder;
+      color: #000000;
+      text-align: initial;
+      margin-left: 10px;
+      font-family: serif; }
+      .noticias .noticiasContenedor .noticias1 a h2 .spanH2 {
+        color: #576cb7; }
+    .noticias .noticiasContenedor .noticias1 a p {
+      margin-left: 10px;
+      margin-top: 2px;
+      text-align: initial;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.805); }
+  .noticias .noticiasContenedor .noticias1 .parrafoEditor {
+    text-align: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px; }
 
 .map {
-  background-color: #ededed;
   text-align: center; }
   .map h2 {
     color: #8a0c0c;
     padding: 30px; }
 
 .directivos {
-  text-align: center;
-  background-color: #ededed; }
+  text-align: center; }
   .directivos h2 {
     color: #8a0c0c;
     font-size: 25px;
@@ -416,7 +422,7 @@ body {
           color: rgba(0, 0, 0, 0.456); }
   .footer a img {
     width: 300px;
-    height: 70px;
+    height: 300px;
     display: flex; }
   .footer .footerGaleriaRedes a img {
     width: 70px;

@@ -26,6 +26,7 @@
             font-weight: lighter;
             color: rgb(237, 237, 237);
             margin-bottom: 5px;
+
         }
 
         .contenedorNuestraubicacion {
@@ -39,7 +40,7 @@
                 text-decoration: none;
                 color: rgb(0, 0, 0);
                 font-weight: bold;
-                background-color: rgb(87, 108, 183);
+                background-color: #576cb7;
                 padding: 8px 5px;
                 border: 1px solid black;
 
@@ -54,89 +55,57 @@
 }
 
 .noticias {
-    background-color: rgb(237, 237, 237);
     text-align: center;
-
-    h2 {
-        color: rgb(138, 12, 12);
-        font-size: 30px;
-        padding: 20px;
-        font-family: var(--bs-font-sans-serif);
-    }
-
-    .noticiasContenedor {
-        display:map-get($cajanoticiasContenedor , flex-caja );
-        flex-direction:map-get($cajanoticiasContenedor , direction-caja );
-        justify-content: map-get($cajanoticiasContenedor , justify-caja );
-        text-align:map-get($cajanoticiasContenedor , align-caja);
-        margin-bottom: map-get($cajanoticiasContenedor , marginbot-caja);
-
-        div {
-            background-color:map-get($cajanoticiasContenedorDiv , backround-div );
-            border: map-get($cajanoticiasContenedorDiv , border-div );
-            width: map-get($cajanoticiasContenedorDiv , ancho-div );
-            height: map-get($cajanoticiasContenedorDiv , alto-div );
-            img {
-                width: map-get($cajanoticiasContenedorDivImg, ancho-div-img );
-                height: map-get($cajanoticiasContenedorDivImg , alto-div-img );
-            }
-
-            a {
-                text-decoration: none;
-
-                h3 {
-                    color:map-get($cajanoticiasContenedorDivH3 , color-div-h3);
-                    font-size: map-get($cajanoticiasContenedorDivH3 , fontz-div-h3 );
-                }
-            }
-
-            a {
-                p {
-                    color: map-get($cajanoticiasContenedorDivAP ,  color-div-a-p);
-                    font-size: map-get($cajanoticiasContenedorDivAP, fontz-div-a-p );
-                }
-            }
-        }
-    }
-
-    .noticiasContenedor2 {
-        display:map-get($cajanoticiasContenedor , flex-caja );
-        flex-direction:map-get($cajanoticiasContenedor , direction-caja );
-        justify-content: map-get($cajanoticiasContenedor , justify-caja );
-        text-align:map-get($cajanoticiasContenedor , align-caja);
-
-        div {
-            background-color:map-get($cajanoticiasContenedorDiv , backround-div );
-            border: map-get($cajanoticiasContenedorDiv , border-div );
-            width: map-get($cajanoticiasContenedorDiv , ancho-div );
-            height: map-get($cajanoticiasContenedorDiv , alto-div );
-
-            img {
-                width: map-get($cajanoticiasContenedorDivImg, ancho-div-img );
-                height: map-get($cajanoticiasContenedorDivImg , alto-div-img );
-            }
-
-            a {
-                text-decoration: none;
-
-                h3 {
-                    color:map-get($cajanoticiasContenedorDivH3 , color-div-h3);
-                    font-size: map-get($cajanoticiasContenedorDivH3 , fontz-div-h3 );
-                }
-            }
-
-            a {
-                p {
-                    color: map-get($cajanoticiasContenedorDivAP ,  color-div-a-p);
-                    font-size: map-get($cajanoticiasContenedorDivAP, fontz-div-a-p );
-                }
-            }
-        }
-    }
+    font-family: 'Times New Roman', Times, serif;
 }
 
+.noticias .noticiasContenedor .noticias1 {
+
+    display: flex;
+    margin: 20px;
+
+
+    img {
+        width: 600px;
+        height: 300px;
+
+    }
+
+
+    a {
+        text-decoration: none;
+
+        h2 {
+            font-size: 32px;
+            font-weight: bolder;
+            color: #000000;
+            text-align: initial;
+            margin-left: 10px;
+            font-family: serif;
+            .spanH2{
+                color: #576cb7;
+            }
+        }
+
+        p {
+            margin-left: 10px;
+            margin-top: 2px;
+            text-align: initial;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.805);
+        }
+    }
+        .parrafoEditor {
+            text-align: initial;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 15px;
+        }
+}
+
+
 .map {
-    background-color: rgb(237, 237, 237);
     text-align: center;
 
     h2 {
@@ -148,7 +117,6 @@
 
 .directivos {
     text-align: center;
-    background-color: rgb(237, 237, 237);
 
     h2 {
         color: rgb(138, 12, 12);
