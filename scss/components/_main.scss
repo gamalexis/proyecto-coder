@@ -57,63 +57,277 @@
 .noticias {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.noticias .noticiasContenedor .noticias1 {
-
-    display: flex;
-    margin: 20px;
 
 
-    img {
-        width: 600px;
-        height: 300px;
+    .noticiasContenedor {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin: 20px;
 
-    }
+        .noticiasPrimeraLinea {
+            margin-bottom: 20px;
+            display: flex;
+            padding-top: 20px;
 
+            img {
+                border: 1px solid #ccc;
+                object-fit: cover;
+                width: 600px;
+                height: 300px;
+            }
 
-    a {
-        text-decoration: none;
+            .contenedorNoticiasPrincipal {
+                display: flex;
+                flex-direction: column;
 
-        h2 {
-            font-size: 32px;
-            font-weight: bolder;
-            color: #000000;
-            text-align: initial;
-            margin-left: 10px;
-            font-family: serif;
-            .spanH2{
-                color: #576cb7;
+                a {
+                    text-decoration: none;
+
+                    h2 {
+                        font-size: 32px;
+                        font-weight: bolder;
+                        color: #000000;
+                        text-align: initial;
+                        margin-left: 10px;
+                        font-family: serif;
+
+                        .spanH2PrimeraLinea {
+                            color: #576cb7;
+                        }
+                    }
+                }
+
+                p {
+                    margin-left: 10px;
+                    margin-top: 2px;
+                    text-align: initial;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.805);
+                }
+
+                .editorPrimeraLinea {
+                    text-align: initial;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: black;
+                    font-size: 12px;
+                    transition: 0.50s;
+
+                    &:hover {
+                        color: purple;
+                    }
+                }
             }
         }
 
-        p {
-            margin-left: 10px;
-            margin-top: 2px;
-            text-align: initial;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            color: rgba(0, 0, 0, 0.805);
+        .noticiasSegundaLinea {
+            display: flex;
+            flex-direction: row;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+
+            .cajaSegundaLinea {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                text-align: initial;
+                width: 300px;
+                height: 500px;
+
+                .cajaEncabezadoSegundaLinea {
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        h3 {
+                            font-size: 28px;
+
+                            .spanH2SegundaLinea {
+                                color: #576cb7;
+                            }
+                        }
+
+                        p {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 14px;
+
+                        }
+                    }
+                }
+
+                .cajaEditorSegundaLinea {
+                    .editorSegundaLinea {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 10px;
+                    }
+                }
+
+                .cajaImagenSegundaLinea {
+                    display: flex;
+
+                    img {
+                        border: 1px solid #ccc;
+                        object-fit: cover;
+                        width: 295px;
+                        height: 293px;
+                    }
+                }
+            }
+
+            .cajaSegundaLinea2 {
+                width: 100%;
+                height: 500px;
+                margin-bottom: 20px;
+                text-align: end;
+                display: flex;
+                flex-direction: column-reverse;
+                .cajaEncabezadoSegundaLinea2 {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        h3 {
+                            font-size: 30px;
+
+                            .spanH2SegundaLinea2 {
+                                color: #576cb7;
+                            }
+                        }
+
+                        p {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .cajaEditorSegundaLinea2 {
+
+                    .editorSegundaLinea2 {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 11px;
+                    }
+                }
+
+                .cajaImagenSegundaLinea2 {
+                    display: flex;
+
+                    img {
+                        border: 1px solid #ccc;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 365px;
+                    }
+                }
+            }
         }
     }
-        .parrafoEditor {
-            text-align: initial;
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-            font-size: 15px;
-        }
 }
-
 
 .map {
-    text-align: center;
+    .mapYCalendarioContenedor {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
 
-    h2 {
-        color: rgb(138, 12, 12);
-        padding: 30px;
+        .mapContenedor {
+            width: 70%;
+            height: 100%;
+            margin-right: 20px;
+
+            .cajaH2Map {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 32px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+            }
+
+            .cajaMap {}
+        }
+
+        .calendarioContenedor {
+            width: 30%;
+            height: 100%;
+
+
+
+            .cajaH2Calendario {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+
+
+                h2 {
+                    margin: 0;
+                    font-size: 32px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    text-align: center;
+                }
+
+                p {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    margin: 0;
+                    font-size: 13px;
+
+                }
+
+            }
+
+            .cajaPDiashorarios {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        margin: 0;
+                        padding-left: 5px;
+                        padding-bottom: 5px;
+                        list-style: none;
+                        text-align: center;
+                        font-size: 13px;
+                        display: flex;
+
+
+                    }
+
+                    h4 {
+                        margin: 0;
+                        padding-left: 2px;
+                        padding-bottom: 2px;
+                        font-size: 15px;
+                        color: black;
+                        background-color: #576cb767;
+                        text-align: center;
+                        display: flex;
+                    }
+
+                    .marginH4Calendario {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
     }
-
 }
+
+
+
+
 
 .directivos {
     text-align: center;
