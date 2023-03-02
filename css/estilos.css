@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? familia= Kanit:peso@200;500 & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -131,12 +133,13 @@ $cajanoticiasContenedorDivAP: (
   font-family: 'Times New Roman', Times, serif; }
   .noticias .noticiasContenedor {
     border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
     margin: 20px; }
     .noticias .noticiasContenedor .noticiasPrimeraLinea {
       margin-bottom: 20px;
       display: flex;
-      padding-top: 20px; }
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc; }
       .noticias .noticiasContenedor .noticiasPrimeraLinea img {
         border: 1px solid #ccc;
         object-fit: cover;
@@ -148,12 +151,12 @@ $cajanoticiasContenedorDivAP: (
         .noticias .noticiasContenedor .noticiasPrimeraLinea .contenedorNoticiasPrincipal a {
           text-decoration: none; }
           .noticias .noticiasContenedor .noticiasPrimeraLinea .contenedorNoticiasPrincipal a h2 {
+            font-family: 'Roboto Slab', serif;
             font-size: 32px;
             font-weight: bolder;
             color: #000000;
             text-align: initial;
-            margin-left: 10px;
-            font-family: serif; }
+            margin-left: 10px; }
             .noticias .noticiasContenedor .noticiasPrimeraLinea .contenedorNoticiasPrincipal a h2 .spanH2PrimeraLinea {
               color: #576cb7; }
         .noticias .noticiasContenedor .noticiasPrimeraLinea .contenedorNoticiasPrincipal p {
@@ -174,8 +177,7 @@ $cajanoticiasContenedorDivAP: (
     .noticias .noticiasContenedor .noticiasSegundaLinea {
       display: flex;
       flex-direction: row;
-      border-top: 1px solid #ccc;
-      padding-top: 20px; }
+      border-bottom: 1px solid #ccc; }
       .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea {
         display: flex;
         flex-direction: column;
@@ -188,12 +190,14 @@ $cajanoticiasContenedorDivAP: (
           text-decoration: none;
           color: black; }
           .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea .cajaEncabezadoSegundaLinea a h3 {
-            font-size: 28px; }
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px; }
             .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea .cajaEncabezadoSegundaLinea a h3 .spanH2SegundaLinea {
               color: #576cb7; }
           .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea .cajaEncabezadoSegundaLinea a p {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px; }
+            font-size: 12px;
+            height: 72px; }
         .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea .cajaEditorSegundaLinea .editorSegundaLinea {
           font-family: Arial, Helvetica, sans-serif;
           font-size: 10px; }
@@ -203,14 +207,21 @@ $cajanoticiasContenedorDivAP: (
             border: 1px solid #ccc;
             object-fit: cover;
             width: 295px;
-            height: 293px; }
+            height: 317px; }
       .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 {
         width: 100%;
         height: 500px;
         margin-bottom: 20px;
-        text-align: end;
+        text-align: start;
         display: flex;
-        flex-direction: column-reverse; }
+        flex-direction: column; }
+        .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaImagenSegundaLinea2 {
+          display: flex; }
+          .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaImagenSegundaLinea2 img {
+            border: 1px solid #ccc;
+            object-fit: cover;
+            width: 100%;
+            height: 333px; }
         .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaEncabezadoSegundaLinea2 {
           display: flex;
           flex-direction: column; }
@@ -218,63 +229,60 @@ $cajanoticiasContenedorDivAP: (
             text-decoration: none;
             color: black; }
             .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaEncabezadoSegundaLinea2 a h3 {
-              font-size: 30px; }
+              font-family: 'Roboto Slab', serif;
+              font-size: 28px;
+              margin: 0; }
               .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaEncabezadoSegundaLinea2 a h3 .spanH2SegundaLinea2 {
                 color: #576cb7; }
             .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaEncabezadoSegundaLinea2 a p {
               font-family: Arial, Helvetica, sans-serif;
-              font-size: 15px; }
-        .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaEditorSegundaLinea2 .editorSegundaLinea2 {
+              font-size: 14px;
+              margin: 0; }
+        .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .editorSegundaLinea2 {
           font-family: Arial, Helvetica, sans-serif;
-          font-size: 11px; }
-        .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaImagenSegundaLinea2 {
-          display: flex; }
-          .noticias .noticiasContenedor .noticiasSegundaLinea .cajaSegundaLinea2 .cajaImagenSegundaLinea2 img {
-            border: 1px solid #ccc;
-            object-fit: cover;
-            width: 100%;
-            height: 365px; }
+          font-size: 11px;
+          margin-top: 5px; }
 
-.map .mapYCalendarioContenedor {
+.mapYCalendario .mapYCalendarioContenedor {
   display: flex;
   flex-direction: row;
   margin: 20px; }
-  .map .mapYCalendarioContenedor .mapContenedor {
+  .mapYCalendario .mapYCalendarioContenedor .mapContenedor {
     width: 70%;
     height: 100%;
     margin-right: 20px; }
-    .map .mapYCalendarioContenedor .mapContenedor .cajaH2Map {
+    .mapYCalendario .mapYCalendarioContenedor .mapContenedor .cajaH2Map {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .map .mapYCalendarioContenedor .mapContenedor .cajaH2Map h2 {
+      .mapYCalendario .mapYCalendarioContenedor .mapContenedor .cajaH2Map h2 {
         font-size: 32px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-  .map .mapYCalendarioContenedor .calendarioContenedor {
+  .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor {
     width: 30%;
     height: 100%; }
-    .map .mapYCalendarioContenedor .calendarioContenedor .cajaH2Calendario {
+    .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaH2Calendario {
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
-      .map .mapYCalendarioContenedor .calendarioContenedor .cajaH2Calendario h2 {
+      .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaH2Calendario h2 {
         margin: 0;
         font-size: 32px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-align: center; }
-      .map .mapYCalendarioContenedor .calendarioContenedor .cajaH2Calendario p {
+      .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaH2Calendario p {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         margin: 0;
         font-size: 13px; }
-    .map .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios {
+    .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios {
       display: flex;
       flex-direction: column;
       align-items: stretch; }
-      .map .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul {
+      .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul {
         padding: 0; }
-        .map .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul li {
+        .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul li {
           margin: 0;
           padding-left: 5px;
           padding-bottom: 5px;
@@ -282,7 +290,7 @@ $cajanoticiasContenedorDivAP: (
           text-align: center;
           font-size: 13px;
           display: flex; }
-        .map .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul h4 {
+        .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul h4 {
           margin: 0;
           padding-left: 2px;
           padding-bottom: 2px;
@@ -291,40 +299,8 @@ $cajanoticiasContenedorDivAP: (
           background-color: #576cb767;
           text-align: center;
           display: flex; }
-        .map .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul .marginH4Calendario {
+        .mapYCalendario .mapYCalendarioContenedor .calendarioContenedor .cajaPDiashorarios ul .marginH4Calendario {
           margin-top: 5px; }
-
-.directivos {
-  text-align: center; }
-  .directivos h2 {
-    color: #8a0c0c;
-    font-size: 25px;
-    padding: 40px; }
-  .directivos .directivosCargoocupar {
-    padding: 30px; }
-    .directivos .directivosCargoocupar div {
-      position: relative;
-      box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
-      -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
-      -moz-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.7);
-      transition: 1s; }
-      .directivos .directivosCargoocupar div:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.75); }
-      .directivos .directivosCargoocupar div img {
-        width: 250px;
-        height: 200px;
-        display: flex;
-        align-items: center; }
-      .directivos .directivosCargoocupar div h3 {
-        position: absolute;
-        bottom: 0;
-        font-size: 15px;
-        background-color: rgba(36, 39, 51, 0.607);
-        color: white;
-        width: 100%; }
 
 .fixed {
   position: fixed;
@@ -339,75 +315,83 @@ $cajanoticiasContenedorDivAP: (
 
 /*--------------------------------------Main-end--------------------------------------------*/
 /*-------------------------------------------------CSS-NOSOTROS-MAIN-START--------------------------*/
-.carouselNosotros .carouselExampleCaptions .carousel-item img {
+.carouselNosotros {
   width: 100%;
-  height: 90vh;
-  object-fit: cover; }
-
-.nosotros {
-  font-family: var(--bs-font-sans-serif);
-  height: 60vh;
-  width: 100%; }
-  .nosotros form div h2 {
-    color: black;
-    font-size: 30px; }
-  .nosotros form div textarea {
-    border-radius: 0.5rem; }
-  .nosotros form div input {
-    border: solid 1px rgba(0, 0, 0, 0.495);
-    border-radius: 0.5rem;
-    padding: 3px; }
+  height: 85vh; }
+  .carouselNosotros .tamañocarousel {
+    width: 100%;
+    height: 85vh; }
+    .carouselNosotros .tamañocarousel .carousel .slide .carousel-inner .carousel-item .active img .d-block .w-100 {
+      object-fit: cover;
+      height: 85vh; }
 
 /*-------------------------------------------------CSS-NOSOTROS-MAIN-END--------------------------*/
 /*-------------------------------------------------CSS-CUENTA-MAIN-START--------------------------*/
-.register {
-  font-family: var(--bs-font-sans-serif);
-  height: 90vh;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.493)), url(../img/img-hero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  text-align: center;
+.logout {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .register h2 {
-    color: rgba(255, 255, 255, 0.836);
-    padding: 3px;
-    font-size: 30px;
-    border: solid 1px white;
-    margin-top: 15px; }
-  .register form div label {
-    color: #fffcfc;
-    background-color: rgba(0, 0, 0, 0.251);
-    font-size: 20px; }
-  .register form div .form-control {
-    background-color: rgba(255, 255, 255, 0.373);
-    width: 250px;
-    display: inline-block;
-    transition: 1s; }
-    .register form div .form-control:hover {
-      background-color: white; }
-  .register form div .btn-primary {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: #000000;
-    transition: 0, 75s; }
-    .register form div .btn-primary:hover {
-      background-color: rgba(67, 161, 255, 0.526); }
-  .register .form-check .form-check-input {
-    transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.373); }
-    .register .form-check .form-check-input:checked {
-      background-color: rgba(67, 161, 255, 0.526); }
-  .register .form-check .form-check-label {
-    color: #fffcfc;
-    background-color: rgba(0, 0, 0, 0.251);
-    font-size: 20px; }
-  .register div .registerNacionalidad {
-    border-radius: 0.25rem; }
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .logout .logoutContenedor {
+    height: 85vh;
+    width: 100%; }
+    .logout .logoutContenedor .logoutContenedorCaja {
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerH2Caja {
+          display: flex;
+          flex-direction: row; }
+          .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerH2Caja h2 {
+            color: black;
+            margin: 2px; }
+        .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja form .mb-3 .form-label {
+          color: black;
+          font-weight: bold;
+          margin: 2px; }
+        .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja form .mb-3 .form-control {
+          padding: 0;
+          display: inline-block;
+          transition: 1s;
+          border: 1px solid #ced4da; }
+          .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja form .mb-3 .form-control:hover {
+            background-color: white; }
+        .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .registerBotonCaja {
+          display: flex;
+          flex-direction: column; }
+          .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .registerBotonCaja select {
+            border: 1px solid #ced4da;
+            border-radius: 5px; }
+          .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .registerBotonCaja .btn-primary {
+            padding: 0px;
+            color: #fff;
+            background-color: rgba(67, 161, 255, 0.526);
+            border: 1px solid #ced4da;
+            transition: 0, 75s; }
+            .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .registerBotonCaja .btn-primary:hover {
+              background-color: #43a1ff; }
+        .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .form-check .form-check-input {
+          transition: 0.5s; }
+          .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .form-check .form-check-input:checked {
+            background-color: rgba(67, 161, 255, 0.526); }
+        .logout .logoutContenedor .logoutContenedorCaja .registerContenedorCaja .registerFormCaja .form-check .form-check-label {
+          color: black;
+          font-weight: bold; }
+      .logout .logoutContenedor .logoutContenedorCaja .imagenEstudiantesContenedor {
+        width: 100%;
+        height: 100%; }
+        .logout .logoutContenedor .logoutContenedorCaja .imagenEstudiantesContenedor .imagenEstudiantesContenedorCaja {
+          margin-left: 50px; }
+          .logout .logoutContenedor .logoutContenedorCaja .imagenEstudiantesContenedor .imagenEstudiantesContenedorCaja img {
+            width: 100%;
+            height: 437px;
+            padding: 50px;
+            object-fit: cover; }
 
 /*  !-------------------------------------------------CSS-CUENTA-MAIN-END--------------------------*/
 /*-------------------------------------------------CSS-GALERIA-MAIN-START--------------------------------*/
