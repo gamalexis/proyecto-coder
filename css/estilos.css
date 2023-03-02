@@ -316,11 +316,9 @@ $cajanoticiasContenedorDivAP: (
 /*--------------------------------------Main-end--------------------------------------------*/
 /*-------------------------------------------------CSS-NOSOTROS-MAIN-START--------------------------*/
 .carouselNosotros {
-  width: 100%;
-  height: 85vh; }
+  width: 100%; }
   .carouselNosotros .tamañocarousel {
-    width: 100%;
-    height: 85vh; }
+    width: 100%; }
     .carouselNosotros .tamañocarousel .carousel .slide .carousel-inner .carousel-item .active img .d-block .w-100 {
       object-fit: cover;
       height: 85vh; }
