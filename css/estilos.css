@@ -608,12 +608,16 @@
       height: 340px; } }
 
 @media screen and (max-width: 1000px) {
-  .listaHeader img {
-    display: block;
-    margin: auto; }
-  .listaHeader a {
-    display: block;
-    text-align: center; }
+  .listaHeader {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .listaHeader img {
+      display: block;
+      margin: auto; }
+    .listaHeader a {
+      display: block;
+      text-align: center; }
   .noticias .noticiasContenedor .noticiasPrimeraLinea img {
     height: 200px; }
   .noticias .noticiasContenedor .noticiasPrimeraLinea .contenedorNoticiasPrincipal a h2 {

@@ -33,6 +33,11 @@ $aHeader: (
 );
 
 //*MIXIN
+@mixin listaHeader ($flexdirect, $justify, $algin) {
+    flex-direction: $flexdirect ;
+    justify-content: $justify;
+    align-items: $algin;
+}
 
 @mixin flexDirect ($flex , $direct , $algin, ) {
     display: $flex;
