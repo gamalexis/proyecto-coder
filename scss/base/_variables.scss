@@ -2,74 +2,93 @@ $list-header-bg: linear-gradient(rgba(0, 0, 0, 0.86), rgb(87, 108, 183));
 $list-header-font: var(--bs-font-sans-serif);
 
 //*mapas
-/*$cajanoticiasContenedor: (
-    flex-caja:flex,
-    direction-caja:row,
-    justify-caja:space-evenly,
-    align-caja: center,
-    marginbot-caja: 50px,
+$listaHeader: (
+    position-lista-header:sticky,
+    display-lista-header:flex,
+    justify-lista-header: space-between,
+    align-lista-header: flex-end,
+);
+$aImgHeader: (
+    ancho-img-header:300px,
+    alto-img-header:100px,
+);
+$navHeader: (
+    displa-nav-header:inline,
+);
+$ulHeader: (
+    display-ul-header:flex,
+    flex-ul-header:row,
+    align-ul-header:flex-end,
+    margin-ul-header:10px,
+    padding-ul-header:0px,
+);
+$liHeader: (
+    list-li-header:none,
+    margin-right-li-header:20px,
+    margin-botom-li-header:15px,
+);
+$aHeader: (
+    textdecoration-a-header:none,
+    fontsize-a-header:20px,
 );
 
-$cajanoticiasContenedorDiv: (
-    backround-div:white,
-    border-div: 2px solid black,
-    ancho-div:300px,
-    alto-div:380px,
-);
-$cajanoticiasContenedorDivImg: (
-    ancho-div-img:296px,
-    alto-div-img:250px,
-);
-$cajanoticiasContenedorDivH3: (
-    color-div-h3: rgb(138, 12, 12),
-    fontz-div-h3:20px,
-);
-
-$cajanoticiasContenedorDivAP: (
-    color-div-a-p: rgb(0, 0, 0),
-    fontz-div-a-p:15px,
-);*/
 //*MIXIN
-@mixin listaHeader ($flexdirect, $justify, $algin) {
-    flex-direction: $flexdirect ;
-    justify-content: $justify;
+
+@mixin flexDirect ($flex , $direct , $algin, ) {
+    display: $flex;
+    flex-direction: $direct;
     align-items: $algin;
 }
-@mixin productos($flexProductos,$flexdirectProductos,$justifyProductos, $alginProductos,$textalginProductos ){
-    display: $flexdirectProductos;
-    flex-direction: $flexdirectProductos;
-    justify-content: $justifyProductos;
-    align-items: $alginProductos;
-    text-align: $textalginProductos;
+
+
+.cajaH2Map {
+    @include flexDirect(flex, column, center);
+}
+.cajaH2Calendario{
+    @include flexDirect (flex, column, flex-start);
+}
+.cajaH2Calendario p {
+    @include flexDirect (flex, column, flex-start);
+}
+.cajaPDiashorarios{
+    @include flexDirect(flex, column, stretch );
+}
+@mixin flexDirectRow ($flexR , $directR ){
+    display: $flexR;
+    flex-direction: $directR;
+}
+.mapYCalendarioContenedor {
+    @include flexDirectRow (flex, row, );
 }
 
 //*EXTENDS 
-%flexDirectivos {
+%flexColumn {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-}
-.directivos {
-    .directivosCargoocupar {
-        @extend %flexDirectivos;
-    }
+    flex-direction: column;
 }
 
-%backroundNosotros{
-    background-color: #ededed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.contenedorNoticiasPrincipal {
+    @extend %flexColumn;
 }
-%flexNosotros{
-    text-align: center;
+
+.cajaSegundaLinea {
+    @extend %flexColumn;
+}
+
+.cajaSegundaLinea2 {
+    @extend %flexColumn;
+}
+
+.cajaEncabezadoSegundaLinea2 {
+    @extend %flexColumn;
+}
+
+
+%flexRow {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
-.nosotros{
-    @extend %backroundNosotros;
-    @extend %flexNosotros;
+
+.noticiasSegundaLinea {
+    @extend %flexRow;
 }
